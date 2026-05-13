@@ -1,0 +1,61 @@
+# ============================================================
+# DÉPENDANCES — gérées par Composer, jamais versionnées
+# ============================================================
+vendor/
+
+# ============================================================
+# CONFIGURATION SENSIBLE — propre à chaque développeur
+# ============================================================
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# FICHIERS GÉNÉRÉS PAR CODEIGNITER 4
+# ============================================================
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+writable/debugbar/*
+
+# Garder les dossiers mais ignorer leur contenu
+!writable/cache/.gitkeep
+!writable/logs/.gitkeep
+!writable/session/.gitkeep
+!writable/uploads/.gitkeep
+
+# ============================================================
+# IDEs
+# ============================================================
+.idea/
+*.iml
+.vscode/
+.eclipse/
+.classpath
+.project
+.settings/
+nbproject/
+
+# ============================================================
+# SYSTÈME D'EXPLOITATION
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# ============================================================
+# LOGS & TEMPORAIRES PHP
+# ============================================================
+*.log
+*.tmp
+*.swp
+*.bak
+
+# ============================================================
+# OUTILS DE TEST ET QUALITÉ DE CODE (optionnel selon équipe)
+# ============================================================
+.phpunit.result.cache
+.php-cs-fixer.cache
+coverage/
