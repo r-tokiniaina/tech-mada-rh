@@ -6,7 +6,7 @@ $active = 'departements';
 ?>
 <section id="page-admin-departements">
     <div class="app-wrap">
-        <?= $this->include('admin/partials/sidebar') ?>
+        <?= view('admin/partials/sidebar', ['active' => $active, 'user' => $user]) ?>
 
         <div class="main">
             <div class="topbar">

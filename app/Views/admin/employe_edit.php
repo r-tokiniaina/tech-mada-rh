@@ -7,7 +7,7 @@ $errors = session()->getFlashdata('errors') ?? [];
 ?>
 <section id="page-admin-employe-edit">
     <div class="app-wrap">
-        <?= $this->include('admin/partials/sidebar') ?>
+        <?= view('admin/partials/sidebar', ['active' => $active, 'user' => $user]) ?>
 
         <div class="main">
             <div class="topbar">

@@ -10,7 +10,7 @@ $initials = strtoupper(substr($prenom, 0, 1) . substr($nom, 0, 1));
 ?>
 <section id="page-profil-employe">
     <div class="app-wrap">
-        <?= $this->include('employe/partials/sidebar') ?>
+        <?= view('employe/partials/sidebar', ['active' => $active, 'user' => $user, 'pendingCount' => $pendingCount ?? 0]) ?>
 
         <div class="main">
             <div class="topbar">

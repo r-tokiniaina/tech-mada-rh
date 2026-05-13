@@ -19,7 +19,7 @@ $typeClass = function (string $libelle): string {
 ?>
 <section id="page-admin-soldes">
     <div class="app-wrap">
-        <?= $this->include('admin/partials/sidebar') ?>
+        <?= view('admin/partials/sidebar', ['active' => $active, 'user' => $user]) ?>
 
         <div class="main">
             <div class="topbar">

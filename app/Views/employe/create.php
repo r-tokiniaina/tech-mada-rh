@@ -8,7 +8,7 @@ $selectedType = old('type_conge_id');
 ?>
 <section id="page-form-conge">
     <div class="app-wrap">
-        <?= $this->include('employe/partials/sidebar') ?>
+        <?= view('employe/partials/sidebar', ['active' => $active, 'user' => $user, 'pendingCount' => $pendingCount ?? 0]) ?>
 
         <div class="main">
             <div class="topbar">
