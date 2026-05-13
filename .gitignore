@@ -6,7 +6,6 @@ vendor/
 # ============================================================
 # CONFIGURATION SENSIBLE — propre à chaque développeur
 # ============================================================
-.env
 .env.*
 !.env.example
 
