@@ -9,6 +9,11 @@ class AuthController extends BaseController
 {
     public function login()
     {
+        $user = session()->get('user');
+        if ($user !== null) {
+            return redirect()->to($user['role']);
+        }
+
         return view('login');
     }
 
@@ -24,5 +29,11 @@ class AuthController extends BaseController
 
         session()->set('user', $user);
         return redirect()->to($user['role']);
+    }
+
+    public function logout()
+    {
+        session()->set('user', null);
+        return redirect()->to('login');
     }
 }
