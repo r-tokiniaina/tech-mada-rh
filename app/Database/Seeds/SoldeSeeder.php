@@ -17,18 +17,60 @@ class SoldeSeeder extends Seeder
                 'jours_pris' => 5
             ],
             [
+                'employe_id' => 1,
+                'type_conge_id' => 2,
+                'annee' => 2025,
+                'jours_attribues' => 15,
+                'jours_pris' => 0
+            ],
+            [
+                'employe_id' => 1,
+                'type_conge_id' => 3,
+                'annee' => 2025,
+                'jours_attribues' => 90,
+                'jours_pris' => 0
+            ],
+            [
                 'employe_id' => 2,
                 'type_conge_id' => 1,
                 'annee' => 2025,
                 'jours_attribues' => 30,
-                'jours_pris' => 10
+                'jours_pris' => 0
+            ],
+            [
+                'employe_id' => 2,
+                'type_conge_id' => 2,
+                'annee' => 2025,
+                'jours_attribues' => 15,
+                'jours_pris' => 0
+            ],
+            [
+                'employe_id' => 2,
+                'type_conge_id' => 3,
+                'annee' => 2025,
+                'jours_attribues' => 90,
+                'jours_pris' => 0
+            ],
+            [
+                'employe_id' => 3,
+                'type_conge_id' => 1,
+                'annee' => 2025,
+                'jours_attribues' => 30,
+                'jours_pris' => 0
             ],
             [
                 'employe_id' => 3,
                 'type_conge_id' => 2,
                 'annee' => 2025,
                 'jours_attribues' => 15,
-                'jours_pris' => 2
+                'jours_pris' => 0
+            ],
+            [
+                'employe_id' => 3,
+                'type_conge_id' => 3,
+                'annee' => 2025,
+                'jours_attribues' => 90,
+                'jours_pris' => 0
             ],
         ];
 

@@ -19,7 +19,7 @@ class CreateConges extends Migration
             'statut' => ['type' => 'VARCHAR', 'constraint' => 10],
             'commentaire_rh' => ['type' => 'VARCHAR', 'constraint' => 255],
             'created_at' => ['type' => 'DATETIME'],
-            'traite_par' => ['type' => 'INTEGER'],
+            'traite_par' => ['type' => 'INTEGER', 'null' => true],
         ]);
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('employe_id', 'employes', 'id');

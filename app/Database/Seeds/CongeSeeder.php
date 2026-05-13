@@ -18,7 +18,7 @@ class CongeSeeder extends Seeder
                 'motif' => 'Vacances',
                 'statut' => 'approuvee',
                 'commentaire_rh' => 'Validé',
-                'created_at' => date('Y-m-d H:i:s'),
+                'created_at' => '2025-06-01 09:00:00',
                 'traite_par' => 3
             ],
             [
@@ -29,9 +29,9 @@ class CongeSeeder extends Seeder
                 'nb_jours' => 3,
                 'motif' => 'Grippe',
                 'statut' => 'en_attente',
-                'commentaire_rh' => 'Sans commentaire',
-                'created_at' => date('Y-m-d H:i:s'),
-                'traite_par' => 3
+                'commentaire_rh' => '',
+                'created_at' => '2025-06-05 10:15:00',
+                'traite_par' => null
             ],
         ];
 

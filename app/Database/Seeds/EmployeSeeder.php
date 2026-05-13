@@ -35,7 +35,7 @@ class EmployeSeeder extends Seeder
                 'email' => 'rh@techmada.mg',
                 'password' => password_hash('rh123', PASSWORD_DEFAULT),
                 'role' => 'rh',
-                'departement_id' => 3,
+                'departement_id' => 1,
                 'date_embauche' => '2022-08-01',
                 'actif' => 1
             ],

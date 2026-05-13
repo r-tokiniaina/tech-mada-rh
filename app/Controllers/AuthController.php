@@ -24,7 +24,7 @@ class AuthController extends BaseController
 
         $user = model('EmployeModel')->findByEmailAndPassword($email, $password);
         if ($user === null) {
-            return redirect()->back()->with('error', ' Identifiants incorrects. Veuillez réessayer.');
+            return redirect()->back()->with('error', 'Identifiants incorrects. Veuillez réessayer.');
         }
 
         session()->set('user', $user);
@@ -33,7 +33,7 @@ class AuthController extends BaseController
 
     public function logout()
     {
-        session()->set('user', null);
+        session()->remove('user');
         return redirect()->to('login');
     }
 }
